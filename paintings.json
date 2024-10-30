@@ -1,0 +1,36 @@
+{
+    "paintings": [
+        {
+            "title": "Starry Night",
+            "artist": "Vincent van Gogh",
+            "description": "A mesmerizing night sky full of swirling patterns.",
+            "imagePath": "images/starry_night.png",
+            "specialNote": "This painting is in the MoMA.",
+            "date": "1889-06-01"
+        },
+        {
+            "title": "The Persistence of Memory",
+            "artist": "Salvador Dalí",
+            "description": "A surreal landscape featuring melting clocks.",
+            "imagePath": "images/persistence_of_memory.png",
+            "specialNote": "",
+            "date": "1931-01-01"
+        },
+        {
+            "title": "The Mona Lisa",
+            "artist": "Leonardo da Vinci",
+            "description": "A portrait of a woman with an enigmatic smile.",
+            "imagePath": "images/mona_lisa.png",
+            "specialNote": "",
+            "date": "1503-10-01"
+        },
+        {
+            "title": "Girl with a Pearl Earring",
+            "artist": "Johannes Vermeer",
+            "description": "A young girl wearing a pearl earring, captured in soft light.",
+            "imagePath": "images/girl_with_pearl_earring.png",
+            "specialNote": "",
+            "date": "1665-01-01"
+        }
+    ]
+}

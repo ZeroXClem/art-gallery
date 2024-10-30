@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Art Gallery</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <!-- Sorting and Filtering Controls -->
+    <div class="controls">
+        <label for="artistFilter">Filter by Artist:</label>
+        <select id="artistFilter">
+            <option value="all">All</option>
+            <!-- Options will be dynamically populated -->
+        </select>
+
+        <label for="sortOption">Sort by:</label>
+        <select id="sortOption">
+            <option value="alphabetical">Alphabetical</option>
+            <option value="date">Date</option>
+            <!-- Additional sort options can be added here -->
+        </select>
+    </div>
+
+    <!-- Gallery Container -->
+    <div id="gallery" class="gallery"></div>
+
+    <!-- Modal Structure -->
+    <div id="myModal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <span class="close" aria-label="Close">&times;</span>
+            <h2 id="modalTitle" class="title"></h2>
+            <img id="modalImage" src="" alt="" class="modal-image">
+            <p class="artist"></p>
+            <p class="description"></p>
+            <p class="special-note"></p>
+        </div>
+    </div>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
