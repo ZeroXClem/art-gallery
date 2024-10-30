@@ -1,0 +1,18 @@
+[
+  {
+    "filename": "styles.css",
+    "originalContent": "/* Utility Classes */\n.text-grey {\n    color: grey;\n}\n\n.text-deep-blue {\n    color: #00008B; /* Deep Blue */\n}\n\n.font-large {\n    font-size: 30px;\n}\n\n.font-medium {\n    font-size: 20px;\n}\n\n.font-small {\n    font-size: 16px;\n}\n\n.font-bold {\n    font-weight: bold;\n}\n\n.font-italic {\n    font-style: italic;\n}\n\n/* Dark Theme */\n.dark-theme {\n    background-color: #121212;\n    color: white;\n    font-family: Arial, sans-serif;\n    padding: 20px;\n}\n\n/* Controls */\n.controls {\n    margin-bottom: 20px;\n}\n\n.controls label {\n    margin-right: 10px;\n}\n\n.controls select {\n    margin-right: 20px;\n    padding: 5px;\n    font-size: 16px;\n}\n\n/* Gallery Layout */\n.gallery {\n    display: grid;\n    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));\n    gap: 20px;\n}\n\n/* Painting Container */\n.painting {\n    border: 2px solid #444;\n    border-radius: 8px;\n    padding: 15px;\n    cursor: pointer;\n    transition: transform 0.2s, box-shadow 0.2s;\n    background-color: #1e1e1e;\n}\n\n.painting:focus {\n    outline: 3px solid #555;\n}\n\n.painting:hover {\n    transform: scale(1.02);\n    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);\n}\n\n/* Painting Image */\n.painting img {\n    width: 100%;\n    height: auto;\n    border-radius: 4px;\n    loading: lazy;\n}\n\n/* Title Style */\n.title {\n    font-size: 30px;\n    color: #00008B; /* Deep Blue */\n    font-weight: bold;\n    margin: 10px 0 5px 0;\n}\n\n/* Artist Style */\n.artist {\n    font-size: 20px;\n    color: black;\n    font-style: italic;\n    margin: 5px 0;\n}\n\n/* Description Style */\n.description {\n    font-size: 16px;\n    color: grey;\n    font-style: italic;\n    margin: 5px 0 15px 0;\n}\n\n/* Special Note Style */\n.special-note {\n    color: #FFD700; /* Gold */\n    font-weight: bold;\n}\n\n/* Modal Styles */\n.modal {\n    display: none; /* Hidden by default */\n    position: fixed;\n    z-index: 1000;\n    left: 0;\n    top: 0;\n    width: 100%;\n    height: 100%;\n    overflow: auto;\n    background-color: rgba(0,0,0,0.8);\n    opacity: 0;\n    transition: opacity 0.5s ease;\n}\n\n.modal.show {\n    display: block;\n    opacity: 1;\n}\n\n.modal-content {\n    background-color: #f4f4f4;\n    margin: 10% auto;\n    padding: 20px;\n    border: 1px solid #888;\n    width: 80%;\n    max-width: 700px;\n    border-radius: 10px;\n    position: relative;\n    animation: fadeIn 0.5s;\n}\n\n@keyframes fadeIn {\n    from { transform: translateY(-50px); opacity: 0; }\n    to { transform: translateY(0); opacity: 1; }\n}\n\n.close {\n    color: #aaa;\n    position: absolute;\n    top: 15px;\n    right: 25px;\n    font-size: 30px;\n    font-weight: bold;\n    cursor: pointer;\n    transition: color 0.3s;\n}\n\n.close:hover,\n.close:focus {\n    color: black;\n    text-decoration: none;\n}\n\n.modal-image {\n    width: 100%;\n    height: auto;\n    border-radius: 4px;\n}\n\n/* Responsive Design */\n@media (max-width: 600px) {\n    .modal-content {\n        width: 95%;\n    }\n\n    .controls {\n        display: flex;\n        flex-direction: column;\n    }\n\n    .controls select {\n        margin-bottom: 10px;\n    }\n}",
+    "edits": [
+      {
+        "explain": "Change the color of the title from deep blue to a lighter blue for better visibility in the dark theme.",
+        "filename": "styles.css",
+        "change": {
+          "type": "replacement",
+          "fromLineNumber": 88,
+          "toLineNumber": 93
+        },
+        "code": ".title {\n    font-size: 30px;\n    color: #4169E1; /* Royal Blue, a lighter shade */\n    font-weight: bold;\n    margin: 10px 0 5px 0;\n}"
+      }
+    ]
+  }
+]
